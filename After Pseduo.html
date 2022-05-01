@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <title>After Pseduo Class</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Tapestry', cursive;
+    }
+
+    header::before {
+        background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: wrap;
+        font-size: 20px;
+    }
+
+    li {
+        list-style: none;
+        padding: 23px;
+    }
+
+    section {
+        /* border: 5px solid green; */
+        height: 400px;
+        display: flex;
+
+        flex-direction: column;
+        margin: 25px 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section h3 {
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /* section::before
+    {
+        content: "This is good boy";
+    }
+    section > p
+    {
+        font-size: 60px;
+    } */
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="navigation">
+                    <li class="item">Home</li>
+                    <li class="item">About</li>
+                    <li class="item">Contact US</li>
+                    <li class="item">Services</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h3>Welcome To My Website</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi quisquam consectetur.</p>
+    </section>
+    <hr>
+</body>
+
+</html>
